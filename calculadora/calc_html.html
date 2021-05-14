@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class = "box">
+            <input name = "pantalla" class="valor" type="text" id="in" readonly="">
+            <form class="calculadora" name="calc">
+                <div class = "grid_cols"></div>
+                <span class="num" onclick="document.getElementById('in').value += '1'">1</span>
+                <span class="num" onclick="document.getElementById('in').value += '2'">2</span>
+                <span class="num" onclick="document.getElementById('in').value += '3'">3</span>
+                <span class="num" onclick="document.getElementById('in').value += '+'">+</span>
+                <span class="num" onclick="document.getElementById('in').value += '4'">4</span>
+                <span class="num" onclick="document.getElementById('in').value += '5'">5</span>
+                <span class="num" onclick="document.getElementById('in').value += '6'">6</span>
+                <span class="num" onclick="document.getElementById('in').value += '-'">-</span>
+                <span class="num" onclick="document.getElementById('in').value += '7'">7</span>
+                <span class="num" onclick="document.getElementById('in').value += '8'">8</span>
+                <span class="num" onclick="document.getElementById('in').value += '9'">9</span>
+                <span class="num" onclick="document.getElementById('in').value += 'x'">x</span>
+                <span class="num" onclick="document.getElementById('in').value = ''">C</span>
+                <span class="num" onclick="document.getElementById('in').value += '0'">0</span>
+                <span class="num" onclick="calcula()">=</span>
+                <span class="num" onclick="document.getElementById('in').value += '/'">/</span>
+            </form>
+        </div>
+    </body>
+    <script src = "calculos.js"></script>
+</html>

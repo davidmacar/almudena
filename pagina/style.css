@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  body {
+	background-color: #EEEEEE;    /* Light gray */
+	
+  }
+  .header-container {
+	color: #000;
+	background-color: rgb(250, 244, 250);  /* rosita */
+	padding: 20px 0;
+	width: 800px;
+	margin: 0px auto; /*Vertical horizontal*/
+	display: flex;
+	justify-content: center; 
+	/*este justify es para los items dentro del flex*/
+  }
+  
+  .header {
+	width: 900px;
+	line-height : 15px;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 20px;
+  }
+  
+  
+  
+  .cuerpo {
+	border: 3px solid #000;  /* For debugging */
+	background-color: #D6E9FE;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 800px;
+	margin: 0px auto; /*Vertical horizontal*/
+  }
+  
+  
+  .parte{
+	border: 3px solid rgb(87, 6, 236);
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+	margin-right: 20px;
+  }
+  
+  .jejeje{
+	border: 3px solid #000;  /* For debugging */ 
+	width: 300px;
+	height: 300px;
+	background-color: red;
+  }
