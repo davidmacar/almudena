@@ -2,150 +2,195 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-size: 10px;
   }
 
 
 body {
-	background-color: #EEEEEE;    /* Light gray */
+	background-color:rgb(218, 218, 218); 
+	color: #000;
+	line-height : 12px;	
+	font-family: Arial, Helvetica, sans-serif;
+	}
+p{
+	position: relative;
+	left:10px;
+	width: 325px
+}
+
+h1{
+	font-size: 30px;
+	font-weight: normal;
+	font-family: "Times New Roman", Times, serif;
 }
 
 
+
 h3{
-	font-size: 24px;
+	text-indent: 7px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 16px;
 	font-weight:bold;
-	color: grey;
+	color: rgb(121, 120, 120);
+  	border-radius: 5px;
+ 	background:
+  		repeating-linear-gradient(
+			135deg,
+  			transparent,
+			transparent 6px,
+			white 6px,
+			white 12px
+ 		),
+ 		linear-gradient(
+			to bottom,
+			rgb(238, 236, 236) 10px,
+			white 20px
+  		);
 }
 
 ul {
 	list-style: none;
+
 }
 
 li{
-	padding-top: 10px ;
-	padding-bottom: 10px;
+	padding-top: 5px ;
+	padding-bottom: 5px;
+	position: relative;
+	left:5px;
 }
 	
 a{
-	color:violet;
+	color: fuchsia;
 }
 
  	/*TITLE OF WEBPAGE*/
 
-  .header-container {
-		border: 3px solid #000;
-		background-color: rgb(250, 244, 250);  /* rosita */
-		padding: 50px 0;
-		width: 800px;
-		margin: 0px auto; /*Vertical horizontal*/
-		display: flex;
-		justify-content: center; 
-			/*este justify es para los items dentro del flex*/
-		box-shadow: 3px 5px 5px #000; 
-		border-radius: 10px;	
-		margin-bottom: 20px;
-  }
+.header-container {
+	width: 580px;
+	height: 120px;
+	margin: 0px auto;
+	background-color: white;
+	display: flex;
+	justify-content: center; 
+	border-bottom-left-radius: 10px	;
+	border-bottom-right-radius: 10px;
+	box-shadow: 3px 5px 5px grey; 
+	  }
 
 .header {
-	border: 3px solid rgb(6, 236, 75);
-	width: 900px;
-	line-height : 15px;
-	display: flex;
-	justify-content: flex-start;
-	margin-left: 20px;
-  }
-  
-  /*CONTENT OF WEB PAGE*/
-  
-  .cuerpo {
- 	background-color: #D6E9FE;  /* For debugging */
-	display: flex;
-	justify-content:space-between;
-	width: 800px;
-	margin: 0px auto; /*Vertical horizontal*/
-  }
-  
-  .bloques{
-	border: 3px solid rgb(87, 6, 236);
-	background-color: white;
-	box-shadow: 3px 5px 5px #000; 
-	border-radius: 10px	;
-	margin-top: 20px;
+	width: 580px;
+	height: 115px;
+	margin:0px 5px;
+	display:flex;
+	justify-content: space-between;
+	background: 	
+	repeating-conic-gradient(
+		from 0deg at 25% 50%,
+		white 0% 2%,
+		rgb(238, 236, 236) 2% 4%);	
+	border-bottom-left-radius: 10px	;
+	border-bottom-right-radius: 10px;
   }
 
-  .izq{
-	border: 3px solid rgb(6, 236, 75);
+.titl{
+	margin-top: 40px;
+	margin-left: 30px;
+	height: 120px;
+	line-height : 20px;
+  }
+
+h1 span{
+	font-size: 30px;
+	color: fuchsia;
+}
+
+.subtitl{
+	color: gray;
+	position: relative;
+	left: 45px;
+}
+
+  /*CONTENT OF WEB PAGE*/
+  
+.cuerpo {
+	display: flex;
+	justify-content:space-between;
+	width: 580px;
+	margin: 10px auto;
+  }
+  
+.bloques{
+	background-color: white;
+	box-shadow: 3px 5px 5px grey; 
+	border-radius: 10px	;
+	margin-top: 10px;
+	padding: 5px 5px 10px 5px;
+  }
+
+.izq{
 	display:flex;
 	flex-direction: column;
 	}
 .bloques-izq{
-	width: 250px;
-	padding: 20px 20px 20px 30px;
-	color:violet;
-}
-.bloques-izq a{
-	text-decoration: none;
+	width: 160px;
+	padding-bottom:10px;
 }
 
 .bl-izq1 a{
 	font-weight:bold;	
 }
 
-
-
-.snd-line{
-	color:grey
-}
-.snd-line a{
-	color:grey
+.bloques-izq a{
+	text-decoration: none;
 }
 
-.minus{
-	font-size:10px;
+.author{
+	color:grey;
+	font-weight: bold;
+}
+
+.minusthan{
+	font-size:8px;
 }
 
 hr.dotted {
 	border-top: 1px dotted #bbb;
-  }
+}
+
 .dotted-Underlined{
 	border-bottom: 1px dotted;
 }
 
-.author{
-	font-weight:bold;
+.dcha{
+	display:flex;
+	flex-direction: column;
 }
 
-
-
-
-
-
-.dcha{
-		border: 3px solid rgb(6, 236, 75);
-		display:flex;
-		flex-direction: column;
-	  }
-
 .bloques-dcha{
-		width: 500px;
-		padding: 10px  ;
-		 /*///cambiar luego*/
+	width: 400px;
+}
 
-	}
+.intro{
+	height: 65px;
+}
 
-.bl-dcha1{
-	padding-left: 60px;
-	}
+.intro h3{
+	height: 30px;
+	width: 340px;
+}
+
+.intro p{
+	position: relative;
+	bottom: 25px;
+}
+
+.bl-txt-dcha{
+	padding-left: 55px;
+}
 	
-.bl-dcha2{
+.bl-txt-izq{
+	padding-right: 55px;
+}
 
-	}
-	
-.bl-dcha3{
-
-	}
-.bl-dcha4{
-
-	}
-.bl-dcha5{
-
-	}
